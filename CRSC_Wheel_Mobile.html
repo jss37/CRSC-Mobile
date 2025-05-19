@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>title</title>
+    <style>
+
+        
+.grid-container {
+  display: grid;
+  grid-template-columns: 49.5% 49.5%;
+  color:#0c5449;
+  gap: .5vw;
+  background-color: #0c5449;
+  padding: .5vw;
+}
+
+.grid-container > div {
+  background-color: #ffe2b5;
+  text-align: center;
+  padding: .5vw;
+  font-size: 3vw;
+}
+
+
+.item1 {
+  grid-column: span 2;
+  line-height: 1vw;
+}
+
+.grid-container2 {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    width: auto;
+    color: #0c5449;
+    gap: .5vw;
+    background-color: #0c5449;
+    padding: .5vw;
+    text-align: center;
+}
+
+.grid-container2 > div {
+  background-color: #ffe2b5;
+  text-align: center;
+  padding: .5vw;
+  font-size: 2.5vw;
+  width:20vw;
+}
+
+    </style>
+</head>
+<body>
+
+<div class="grid-container">
+  <div class="item1"><h1>Clinicial Research Service Center</h1><br><p><em>A quote from a person</em></p></div>
+  <div class="item2">Core Services and Pricing</div>
+  <div class="item3">Clinical Research Center</div>  
+  <div class="item4">Current Clinical Research</div>
+  <div class="item5">ResearchLaboratory</div>
+  <div class="item6">WSU BioBank Specimen</div>
+  <div class="item7">ResearchMatch</div>
+  <div class="item8">Clinical Research Management</div>
+  <div class="item9">Database Creation</div>
+</div>
+<div class="grid-container2" >
+<div class="item10" style="margin-left: 3vw;">OnCore</div>
+<div class="item11" style="margin-right: 3vw;">EReg</div>
+<div class="item12" style="margin-left: 2.5vw;">REDCap</div>
+<div class="item13" style="margin-right: 3vw;">EDC</div>
+<div class="item14" style="margin-left: 3vw;">BioStats</div>
+<div class="item15" style="margin-right: 3vw;">Budget</div>
+<div class="item16" style="margin-left: 2.5vw;">GCP</div>
+<div class="item17" style="margin-right: 3vw;">Surveys</div>
+</div>
+
+</body>
+<script>
+    function openPage(pageName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(pageName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+</script>
+</html>
