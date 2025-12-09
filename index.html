@@ -22,6 +22,11 @@
   font-size: 4vw;
 }
 
+.clickable:hover {
+  background-color: #0c5449;
+  color: white;
+}
+
 
 .item1 {
   grid-column: span 2;
@@ -47,24 +52,31 @@
   width:20vw;
 }
 
-.banner-text {
-    border: 2px solid black;
+#banner-text {
+    border: 1vw solid #0c5449;
+    background-color: #0c5449;
+    color: white;
         }
+
+#banner-text:hover {
+  background-color: white;
+  color: #0c5449;
+}
 
     </style>
 </head>
 <body>
 
 <div class="grid-container">
-  <div class="item1"><h1>Clinicial Research<br> Service Center</h1><p id="banner-text"><em>Your Research<br>Our Support</em></p></div>
-  <div class="item2">Core Services and Pricing</div>
-  <div class="item3">Clinical Research Center</div>  
-  <div class="item4">PHOENIX Professional Services</div>
-  <div class="item5">ResearchLaboratory</div>
-  <div class="item6">WSU BioBank Specimen</div>
-  <div class="item7">ResearchMatch</div>
-  <div class="item8">Clinical Research Management</div>
-  <div class="item9">Database Creation</div>
+  <div class="item1"><h1>Your Research<br>Our Support</h1><p id="banner-text">View our pricing and services</p></div>
+  <div class="item2 clickable">Health Economics Analysis</div>
+  <div class="item3 clickable">Clinical Research Center</div>  
+  <div class="item4 clickable">PHOENIX Professional Services</div>
+  <div class="item5 clickable">ResearchLaboratory</div>
+  <div class="item6 clickable">WSU BioBank Specimen</div>
+  <div class="item7 clickable">ResearchMatch Recruitment</div>
+  <div class="item8 clickable">Clinical Research Management</div>
+  <div class="item9 clickable">Database Creation</div>
 </div>
 <div class="grid-container2" >
 <div class="item10" style="margin-left: 3vw;">OnCore</div>
@@ -80,7 +92,6 @@
 </body>
 
 </html>
-
 
 
 
